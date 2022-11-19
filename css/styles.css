@@ -249,7 +249,7 @@ img {
 
 .contact-list {
 	display: flex;
-	gap: 50px;
+	gap: var(--width-gap-list);
 	margin-left: auto;
 	align-items: center;
 }
@@ -632,7 +632,104 @@ img {
 	background-color: var(--background-color-socials-icons);
 }
 
+.form {
+	display: block;
+	margin-top: auto;
+	margin-bottom: auto;
+	margin-left: auto;
+
+}
+
+.footer--flex {
+	display: flex;
+}
+
+.form_field {
+	display: flex;
+	align-items: flex-end;
+	gap: 12px;
+}
+.form-label {
+	display: flex;
+
+	
+	flex-basis: 360px;
+}
+.form_title {
+	display: block;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 1.14;
+	text-transform: uppercase;
+
+	margin-bottom: 20px;
+
+	color: var(--color-text-white);
+}
+
+.form_input {
+	display: inline-flex;
+
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.25;
+
+	width: 360px;
+	height: 50px;
+
+	padding: 15px 16px;
+
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 4px;
+
+	background-color: transparent;
+
+	transition: box-shadow var(--transform-and-animation);
+
+}
+
+.form_input:focus {
+	outline: none;
+	border: 1px solid  rgba(255, 255, 255, 0.3);
+	box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.3);
+}
+
+.form_input:not(:placeholder-shown):invalid {
+	border: 1px solid  rgba(255, 255, 255, 0.3);
+	box-shadow: 0 0 4px 1px rgba(255, 255, 255, 0.3);
+}
+
+.form_input:not(:placeholder-shown):valid {
+	border: 1px solid var(--accent-text-color);
+	box-shadow: 0 0 4px 1px  var(--accent-text-color);
+}
+
+.form_btn {
+	position: relative;
+	max-width: 200px;
+	height: 50px;
+	align-items: center;
+
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 62px;
+	padding-left: 28px;
+
+	font-family: 'Roboto';
+	font-style: normal;
+}
+
+.send {
+	position: absolute;
+	top: 13px;
+	right: 28px;
+	fill: currentColor;
+}
+
 /* *** */
+
 
 /*-------------------------MAIN - PORTFOLIO ------------------------*/
 /*-------------------------list of button ------------------------*/
