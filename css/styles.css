@@ -723,7 +723,9 @@ img {
 
 .send {
 	position: absolute;
-	top: 13px;
+	top: 50%;
+	transform: translateY(-50%);
+	
 	right: 28px;
 	fill: currentColor;
 }
