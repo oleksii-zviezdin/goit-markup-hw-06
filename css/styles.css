@@ -634,14 +634,15 @@ img {
 
 .form {
 	display: block;
-	margin-top: auto;
-	margin-bottom: auto;
+	/* margin-top: auto;
+	margin-bottom: auto; */
 	margin-left: auto;
 
 }
 
 .footer--flex {
 	display: flex;
+	align-items: baseline;
 }
 
 .form_field {
@@ -899,6 +900,8 @@ img {
 	border-radius: 4px;
 
 	transition: transform var(--transform-and-animation);
+
+	user-select: none;
 }
 
 .backdrop.is-hidden .modal {
@@ -997,6 +1000,8 @@ img {
 	letter-spacing: 0.01em;
 
 	margin-bottom: 4px;	
+
+	/* user-select: none; */
 }
 
 .modal-form-field {
